@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+	<style>
+#ip {
+visibility:hidden;
+}
+	</style>
+
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration Form with HTML5 and CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+		<br/>
+		<br/>
+		<br/>
+		<p><i class="fa fa-user-circle fa-5x"></i></p>
+		<br/>
+		<br/>
+		<br/>
+		<h1>USER NAME</h1>
+		<br/>
+		<h1> NAME </h1>
+		<br/>
+		<a href="changepwd.html"> CHANGE PASSWORD </a>
+		<br/>
+		<br/>
+		
+		<button id="up" onclick="update()">UPDATE THEATRE</button>
+		<br/>
+		<br/>
+		<div id="ip">
+		<input type="text">ENTER YOUR UPDATE</input>
+		<br/>
+		<br/>
+		<br/>
+		<input type="submit" value="Submit"></input>
+		</div>
+		<br/>
+		<br/>
+		
+		</div>
+		
+		</body>
+		<script>
+		function update(){
+		var x=document.getElementById('ip');
+		 if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'hidden';
+  }
+		}
+		</script>
+		</html>
